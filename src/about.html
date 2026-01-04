@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>About Us | Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly Websites</title>
+</head>
+
+<body class="bg-black">
+    <div class="container max-w-8xl mx-auto">
+        <header>
+            <nav class="p-5 flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="src/img/logo.png" alt="logo" class="w-10 h-10 invert-100">
+                        <p class="text-white font-bebas uppercase text-2xl">Bhavesh Suthar</p>
+                    </a>
+                </div>
+                <div class="block md:hidden menu" onclick="togglemenu()">
+                    <img src="/src/img/menu.png" alt="menu" class="size-7 filter invert menuOpen">
+                </div>
+                <div class="mobile-nav hidden md:flex">
+                    <ul class="md:items-center gap-10 md:flex">
+                        <li><a href="#project" class="text-white md:text-xl text-2xl">Work</a></li>
+                        <li><a href="about.html" class="text-white md:text-xl text-2xl">About</a></li>
+                        <li><a href="#contact" class="text-white md:text-xl text-2xl">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="about-me">
+            <div
+                class="about-me-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white gap-64.25 justify-between">
+                <div class="about-heading flex ">
+                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52">
+                        About Me
+                    </h2>
+                </div>
+                <div class="about-para">
+                    <h4 class="text-3xl pb-3">I am a Frontend Developer based in india. Has Information Technology
+                        Background</h4>
+                    <p class="text-gray-400">I am a front-end developer based in india looking for exciting
+                        opportunities. Has Information
+                        Technology background. Likes to focus on accessibility when developing. Passionate and curious
+                        about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
+                        I am not programming, I enjoy playing Singing, acting etc. Learning more
+                        to improve skill.</p>
+
+                    <a href="./src/about.html" class="pt-13.25">More About Me</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>

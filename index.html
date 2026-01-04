@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly Websites</title>
+</head>
+
+<body class="bg-black">
+    <div class="container max-w-8xl mx-auto">
+        <header>
+            <nav class="p-5 flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="src/img/logo.png" alt="logo" class="w-10 h-10 invert-100">
+                        <p class="text-white font-bebas uppercase text-2xl">Bhavesh Suthar</p>
+                    </a>
+                </div>
+                <div class="block md:hidden menu" onclick="togglemenu()">
+                    <img src="/src/img/menu.png" alt="menu" class="size-7 filter invert menuOpen">
+                </div>
+                <div class="mobile-nav hidden md:flex">
+                    <ul class="md:items-center gap-10 md:flex">
+                        <li><a href="#project" class="text-white md:text-xl text-2xl">Work</a></li>
+                        <li><a href="about.html" class="text-white md:text-xl text-2xl">About</a></li>
+                        <li><a href="#contact" class="text-white md:text-xl text-2xl">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="">
+            <div
+                class="md:flex grid-cols-1 gap-2 mt-10 md:justify-around items-center flex justify-center flex-col md:flex-row md:p-6">
+                <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
+                    <h1 class="text-white md:text-6xl font-bebas mb-3 uppercase text-5xl tracking-wider font-light">Hi,
+                        i am
+                        <br>Bhavesh Suthar.
+                    </h1>
+                    <p class="text-gray-400 mb-10 text-sm">I am an Frontend Developer focused on building accessible,
+                        responsive,
+                        and user-friendly websites with clean code and modern UI Design.</p>
+                    <a href="#">
+                        <button
+                            class="bg-[#D3E97A] p-2 w-30.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm">Contact
+                            Me</button>
+                    </a>
+                </div>
+                <div
+                    class="bg-[#edf6f9] md:w-130 md:h-103 rounded-2xl relative overflow-hidden mt-7 lg:w-130 lg:h-145 w-87 h-100">
+                    <img src="src/img/Bhavesh Pic.png" class="w-full object-cover rounded-2xl inset-0"
+                        alt="Bhavesh Pic">
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20">
+    <div class="container max-w-8xl mx-auto">
+        <section class="text-white" id="project">
+            <div class="max-w-7xl mx-auto items-center md:block flex flex-col md:flex-row">
+                <div class="p-6">
+                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light">
+                        My Projects
+                    </h2>
+                    <p class="mt-4 text-gray-400 max-w-xl">
+                        Here are some of the selected projects that showcase my passion for front-end development.
+                    </p>
+                </div>
+
+                <!-- Project card -->
+                <div class="mt-20 md:flex md:flex-col md:gap-30 md:p-6 flex flex-col gap-5">
+                    <div
+                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
+                            <img src="src/img/tic-tac-toe.png" alt="Tic Tac Toe" class="w-full h-full">
+                        </figure>
+                        <div class="project-details mt-8 mb-8">
+                            <h3 class="text-2xl tracking-tight">Tic Tac Toe</h3>
+                            <p class="mt-4 text-gray-400 max-w-xl">A modern take on the classic Tic Tac Toe game
+                                with simple design and intuitive
+                                gameplay.
+                            </p>
+                            <div class="project-info flex items-center mt-5 gap-6">
+                                <a href="https://tic-tac-toe-game-play-and-fun.netlify.app/"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
+                                    Demo</a>
+                                <a href="#"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
+                            <img src="src/img/Exclusive Ecommerce webiste pic.png" alt="Exclusive Website pic"
+                                class="w-full h-full">
+                        </figure>
+                        </figure>
+                        <div class="project-details mt-8 mb-8">
+                            <h3 class="text-2xl tracking-tight">Exclusive Ecommerce Website</h3>
+                            <p class="mt-4 text-gray-400 max-w-xl">This exclusive e-commerce website was built to
+                                showcase a premium online shopping experience. It features a clean and modern
+                                interface, responsive design across all devices, and smooth user interactions. The
+                                project highlights product listing, detailed product views, cart functionality, and
+                                a streamlined checkout flow, with a strong focus on usability, performance, and
+                                visual consistency.
+                            </p>
+                            <div class="project-info flex items-center mt-5 gap-6">
+                                <a href="https://exclusive-online-shopping-store.netlify.app/"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
+                                    Demo</a>
+                                <a href="#"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
+                            <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-full">
+                        </figure>
+                        </figure>
+                        <div class="project-details mt-8 mb-8">
+                            <h3 class="text-2xl tracking-tight">Focus On Today</h3>
+                            <p class="mt-4 text-gray-400 max-w-xl">This project is based on a to-do list that allows
+                                users to manage their daily tasks according to their preferences. I have added
+                                functionality using localStorage, which saves tasks directly in the user’s browser. This
+                                feature is helpful because it prevents users from losing their to-do list. If a user is
+                                unable to complete their tasks in a day, they can save the list without any hassle and
+                                continue later.
+                            </p>
+                            <div class="project-info flex items-center mt-5 gap-6">
+                                <a href="https://focus-on-today-2.netlify.app/"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
+                                    Demo</a>
+                                <a href="#"
+                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20">
+    <div class="container max-w-8xl mx-auto">
+        <section class="about-me">
+            <div
+                class="about-me-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white gap-64.25 justify-between">
+                <div class="about-heading flex ">
+                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52">
+                        About Me
+                    </h2>
+                </div>
+                <div class="about-para md:flex md:flex-col gap-13.25">
+                    <h4 class="text-3xl pb-3">I am a Frontend Developer based in india. Has Information Technology
+                        Background</h4>
+                    <p class="text-gray-400">I am a front-end developer based in india looking for exciting
+                        opportunities. Has Information
+                        Technology background. Likes to focus on accessibility when developing. Passionate and curious
+                        about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
+                        I am not programming, I enjoy playing Singing, acting etc. Learning more
+                        to improve skill.</p>
+
+                    <a href="about.html">More About Me</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20">
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
