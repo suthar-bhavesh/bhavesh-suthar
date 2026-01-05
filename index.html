@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" class="invert">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/input.css">
     <link rel="stylesheet" href="/src/style.css">
@@ -12,7 +15,7 @@
 </head>
 
 <body class="bg-black">
-    <div class="container max-w-8xl mx-auto">
+    <div class="container md:max-w-8xl md:mx-auto">
         <header>
             <nav class="p-5 flex justify-between items-center">
                 <div class="flex items-center">
@@ -28,30 +31,43 @@
                     <ul class="md:items-center gap-10 md:flex">
                         <li><a href="#project" class="text-white md:text-xl text-2xl">Work</a></li>
                         <li><a href="about.html" class="text-white md:text-xl text-2xl">About</a></li>
-                        <li><a href="#contact" class="text-white md:text-xl text-2xl">Contact</a></li>
+                        <li><a href="#contactME" class="text-white md:text-xl text-2xl">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section class="">
+        <section>
             <div
-                class="md:flex grid-cols-1 gap-2 mt-10 md:justify-around items-center flex justify-center flex-col md:flex-row md:p-6">
-                <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
-                    <h1 class="text-white md:text-6xl font-bebas mb-3 uppercase text-5xl tracking-wider font-light">Hi,
-                        i am
-                        <br>Bhavesh Suthar.
-                    </h1>
-                    <p class="text-gray-400 mb-10 text-sm">I am an Frontend Developer focused on building accessible,
-                        responsive,
-                        and user-friendly websites with clean code and modern UI Design.</p>
-                    <a href="#">
-                        <button
-                            class="bg-[#D3E97A] p-2 w-30.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm">Contact
-                            Me</button>
-                    </a>
+                class="md:flex grid-cols-1 gap-2 mt-34 md:justify-around items-center flex justify-center flex-col md:flex-row md:p-6">
+                <div class=" flex flex-col justify-center items-center">
+                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
+                        <h1 class="text-white md:text-6xl font-bebas uppercase text-5xl tracking-wider font-light">
+                            Hi,
+                            i am
+                            <br>Bhavesh Suthar.
+                        </h1>
+                    </div>
+                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
+                        <p class="text-gray-400 text-sm">I am an Frontend Developer focused on building accessible,
+                            responsive,
+                            and user-friendly websites with clean code and modern UI Design.</p>
+                    </div>
+                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full flex items-center gap-4">
+                        <a href="#contactME">
+                            <button
+                                class="bg-[#D3E97A] p-2 w-30.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm">Contact
+                                Me</button>
+                        </a>
+                        <a href="https://github.com/suthar-bhavesh"
+                            class="cursor-pointer bg-[#222222] p-3 rounded-full"><i
+                                class="fa-brands fa-github text-[#D3E97A] text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
+                            class="cursor-pointer bg-[#222222] p-3 rounded-full"><i
+                                class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i></a>
+                    </div>
                 </div>
                 <div
-                    class="bg-[#edf6f9] md:w-130 md:h-103 rounded-2xl relative overflow-hidden mt-7 lg:w-130 lg:h-145 w-87 h-100">
+                    class="bg-[#edf6f9] md:w-130 md:h-103 rounded-2xl relative overflow-hidden mt-7 lg:w-107 lg:h-105 w-87 h-100">
                     <img src="src/img/Bhavesh Pic.png" class="w-full object-cover rounded-2xl inset-0"
                         alt="Bhavesh Pic">
                 </div>
@@ -59,7 +75,7 @@
         </section>
     </div>
     <hr class="text-[#343a40] mt-20 mb-20">
-    <div class="container max-w-8xl mx-auto">
+    <div class="container md:max-w-8xl md:mx-auto">
         <section class="text-white" id="project">
             <div class="max-w-7xl mx-auto items-center md:block flex flex-col md:flex-row">
                 <div class="p-6">
@@ -73,8 +89,8 @@
 
                 <!-- Project card -->
                 <div class="mt-20 md:flex md:flex-col md:gap-30 md:p-6 flex flex-col gap-5">
-                    <div
-                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-all duration-700"
+                        id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/tic-tac-toe.png" alt="Tic Tac Toe" class="w-full h-full">
                         </figure>
@@ -85,7 +101,7 @@
                                 gameplay.
                             </p>
                             <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://tic-tac-toe-game-play-and-fun.netlify.app/"
+                                <a href="https://tic-stack.netlify.app/"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
                                     Demo</a>
                                 <a href="#"
@@ -94,8 +110,8 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-all duration-700"
+                        id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/Exclusive Ecommerce webiste pic.png" alt="Exclusive Website pic"
                                 class="w-full h-full">
@@ -111,7 +127,7 @@
                                 visual consistency.
                             </p>
                             <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://exclusive-online-shopping-store.netlify.app/"
+                                <a href="https://exclusive-ecommerce-shopping.netlify.app/"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
                                     Demo</a>
                                 <a href="#"
@@ -120,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25">
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-all duration-700"
+                        id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-full">
                         </figure>
@@ -136,7 +152,7 @@
                                 continue later.
                             </p>
                             <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://focus-on-today-2.netlify.app/"
+                                <a href="https://focus-on-todo.netlify.app/"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
                                     Demo</a>
                                 <a href="#"
@@ -150,33 +166,94 @@
         </section>
     </div>
     <hr class="text-[#343a40] mt-20 mb-20">
-    <div class="container max-w-8xl mx-auto">
+    <div class="container md:max-w-8xl md:mx-auto">
         <section class="about-me">
             <div
-                class="about-me-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white gap-64.25 justify-between">
-                <div class="about-heading flex ">
+                class="about-me-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white md:gap-64.25 md:justify-between gap-9">
+                <div class="about-heading flex mb-5">
                     <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52">
                         About Me
                     </h2>
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13.25">
-                    <h4 class="text-3xl pb-3">I am a Frontend Developer based in india. Has Information Technology
+                <div class="about-para md:flex md:flex-col gap-13.25 sm:mt-4">
+                    <h4 class="text-2xl mb-5">I am a Frontend Developer based in india. Has Information Technology
                         Background</h4>
-                    <p class="text-gray-400">I am a front-end developer based in india looking for exciting
+                    <p class="text-gray-400 mb-5">I am a front-end developer based in india looking for exciting
                         opportunities. Has Information
                         Technology background. Likes to focus on accessibility when developing. Passionate and curious
                         about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
                         I am not programming, I enjoy playing Singing, acting etc. Learning more
                         to improve skill.</p>
 
-                    <a href="about.html">More About Me</a>
+                    <a href="about.html"
+                        class="text-[#D3E97A] font-medium hover:border-b border-[#D3E97A] w-35.5 uppercase">More
+                        About
+                        Me</a>
                 </div>
             </div>
         </section>
     </div>
+
     <hr class="text-[#343a40] mt-20 mb-20">
 
-    <script src="src/script.js"></script>
+    <div class="container md:max-w-8xl md:mx-auto" id="contactME">
+        <section class="contact-form">
+            <div
+                class="form-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white md:gap-64.25 md:justify-between gap-9">
+                <div class="about-heading flex gap-10 flex-col">
+                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-80">
+                        Let's Connect
+                    </h2>
+                    <div class="social-link flex items-center gap-2">
+                        <a href="https://github.com/suthar-bhavesh"><i
+                                class="fa-brands fa-github text-[#D3E97A] text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"><i
+                                class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i></a>
+                        <a href="https://x.com/Bhavesh37820418"><i
+                                class="fa-brands fa-x-twitter text-[#D3E97A] text-2xl"></i></a>
+                        <a href="https://hosturl.info/31UQuC"><i
+                                class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="main-form md:flex md:flex-col gap-13.25 sm:mt-4">
+                    <form action="#" method="get" class="w-150 h-152.50">
+                        <div class="contactFields flex flex-col mb-6 gap-2 w-full">
+                            <label for="fullname" class="text-gray-200 font-light">Full Name</label>
+                            <input type="text" placeholder="john Doe" name="fullname" id="fullname"
+                                class="bg-[#1A1A1A] p-3 outline-0 rounded-l-lg" required>
+                        </div>
+
+                        <div class="contactFields flex flex-col mb-6 gap-2">
+                            <label for="email" class="text-gray-200 font-light">Email</label>
+                            <input type="email" placeholder="example@gmail.com" name="email" id="email"
+                                class="bg-[#1A1A1A] p-3 outline-0 rounded-l-lg" required>
+                        </div>
+
+                        <div class="contactFields flex flex-col mb-6 gap-2">
+                            <label for="subject" class="text-gray-200 font-light">Subject</label>
+                            <input type="text" placeholder="Message Subject" name="subject" id="subject"
+                                class="bg-[#1A1A1A] p-3 outline-0 rounded-lg" required>
+                        </div>
+
+                        <div class="contactFields flex flex-col mb-6 gap-2">
+                            <label for="message" class="text-gray-200 font-light">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                class="bg-[#1A1A1A] p-3 outline-0 rounded-l-lg" placeholder="Type here your Message..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="mt-10 bg-[#D3E97A] text-black p-3 rounded-4xl w-30 font-medium cursor-pointer">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-developer-sign flex justify-center items-center">
+        <p class="text-gray-800">@ 2026 Bhavesh Suthar</p>
+    </div>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
