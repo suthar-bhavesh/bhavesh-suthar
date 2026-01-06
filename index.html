@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="md:overflow-x-hidden md:relative overflow-x-hidden relative">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" class="invert">
-    <link href="./src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./src/input.css">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly Websites</title>
 </head>
 
-<body class="bg-black">
-    <div class="container md:max-w-8xl md:mx-auto">
-        <header>
+<body class="bg-black md:overflow-x-hidden md:relative overflow-x-hidden relative">
+    <div class="container w-full md:mx-auto overflow-hidden">
+        <header class="fixed bg-black top-0 w-full md:w-0">
             <nav class="p-5 flex justify-between items-center">
                 <div class="flex items-center">
                     <a href="index.html" class="flex items-center gap-3">
@@ -24,79 +23,76 @@
                         <p class="text-white font-bebas uppercase text-2xl">Bhavesh Suthar</p>
                     </a>
                 </div>
-                <div class="block md:hidden menu" onclick="togglemenu()">
+                <div class="block md:hidden menu z-99999" onclick="togglemenu()">
                     <img src="/src/img/menu.png" alt="menu" class="size-7 filter invert menuOpen">
                 </div>
-                <div class="mobile-nav hidden md:flex">
-                    <ul class="md:items-center gap-10 md:flex">
-                        <li><a href="#project" class="text-white md:text-xl text-2xl">Work</a></li>
-                        <li><a href="about.html" class="text-white md:text-xl text-2xl">About</a></li>
-                        <li><a href="#contactME" class="text-white md:text-xl text-2xl">Contact</a></li>
+                <div id="mobile-nav" class="mobile-nav hidden md:flex">
+                    <ul class="flex items-center gap-8 md:gap-10 flex-col mt-31 w-full h-full md:mt-0 md:flex-row">
+                        <li><a href="#work" class="text-white text-2xl md:text-xl">Work</a></li>
+                        <li><a href="about.html" class="text-white text-2xl md:text-xl">About</a>
+                        </li>
+                        <li><a href="#contactME" class="text-white text-2xl md:text-xl">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section>
-            <div
-                class="md:flex grid-cols-1 gap-2 mt-34 md:justify-around items-center flex justify-center flex-col md:flex-row md:p-6">
-                <div class=" flex flex-col justify-center items-center">
-                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
-                        <h1 class="text-white md:text-6xl font-bebas uppercase text-5xl tracking-wider font-light">
-                            Hi,
-                            i am
-                            <br>Bhavesh Suthar.
-                        </h1>
-                    </div>
-                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full">
-                        <p class="text-gray-400 text-sm">I am an Frontend Developer focused on building accessible,
-                            responsive,
-                            and user-friendly websites with clean code and modern UI Design.</p>
-                    </div>
-                    <div class="md:w-150 md:text-left md:p-5 p-6 w-full flex items-center gap-4">
-                        <a href="#contactME">
-                            <button
-                                class="bg-[#D3E97A] p-2 w-30.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm">Contact
-                                Me</button>
+        <section class="w-full">
+            <div class="max-w-7xl mx-auto items-center md:flex flex-col md:flex-row md:mt-34 mt-20">
+
+                <div class="flex-1 md:text-left space-y-6 p-6">
+                    <h1 class="text-white text-5xl md:text-[55px] font-bebas uppercase leading-tight">
+                        Hi, i am <br>Bhavesh Suthar.
+                    </h1>
+                    <p class="text-gray-400 md:text-[14px]">
+                        I am a Frontend Developer focused on building accessible, responsive,
+                        and user-friendly websites with clean code and modern UI Design.
+                    </p>
+                    <div class="flex items-center justify-center md:justify-start gap-4">
+                        <a href="#contactME"
+                            class="bg-[#D3E97A] px-6 py-3 rounded-full uppercase text-black font-bold text-sm">
+                            Contact Me
                         </a>
-                        <a href="https://github.com/suthar-bhavesh"
-                            class="cursor-pointer bg-[#222222] p-3 rounded-full"><i
-                                class="fa-brands fa-github text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
-                            class="cursor-pointer bg-[#222222] p-3 rounded-full"><i
-                                class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i></a>
+                        <a href="#" class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div
-                    class="bg-[#edf6f9] md:w-130 md:h-103 rounded-2xl relative overflow-hidden mt-7 lg:w-107 lg:h-105 w-87 h-100">
-                    <img src="src/img/Bhavesh Pic.png" class="w-full object-cover rounded-2xl inset-0"
-                        alt="Bhavesh Pic">
+
+                <div class="flex justify-center md:justify-end mx-6">
+                    <div class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="src/img/Bhavesh Pic.png" class="w-full h-full object-cover" alt="Bhavesh Pic">
+                    </div>
                 </div>
+
             </div>
         </section>
     </div>
     <hr class="text-[#343a40] mt-20 mb-20">
     <div class="container md:max-w-8xl md:mx-auto" id="work">
-        <section class="text-white" id="project">
+        <section class="text-white" id="project w-full">
             <div class="max-w-7xl mx-auto items-center md:block flex flex-col md:flex-row">
                 <div class="p-6">
                     <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light">
                         My Projects
                     </h2>
-                    <p class="mt-4 text-gray-400 max-w-xl">
+                    <p class="mt-4 text-gray-400 max-w-xl md:text-[14px]">
                         Here are some of the selected projects that showcase my passion for front-end development.
                     </p>
                 </div>
 
                 <!-- Project card -->
                 <div class="mt-20 md:flex md:flex-col md:gap-30 md:p-6 flex flex-col gap-5">
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-700"
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000"
                         id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/tic-tac-toe.png" alt="Tic Tac Toe" class="w-full h-full">
                         </figure>
                         <div class="project-details mt-8 mb-8">
                             <h3 class="text-2xl tracking-tight">Tic Tac Toe</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl">A modern take on the classic Tic Tac Toe game
+                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">A modern take on the
+                                classic Tic Tac Toe game
                                 with simple design and intuitive
                                 gameplay.
                             </p>
@@ -110,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-700"
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000"
                         id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/Exclusive Ecommerce webiste pic.png" alt="Exclusive Website pic"
@@ -119,7 +115,8 @@
                         </figure>
                         <div class="project-details mt-8 mb-8">
                             <h3 class="text-2xl tracking-tight">Exclusive Ecommerce Website</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl">This exclusive e-commerce website was built to
+                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">This exclusive e-commerce
+                                website was built to
                                 showcase a premium online shopping experience. It features a clean and modern
                                 interface, responsive design across all devices, and smooth user interactions. The
                                 project highlights product listing, detailed product views, cart functionality, and
@@ -136,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-700"
+                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-8.25 md:flex md:flex-row w-88 md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000"
                         id="content">
                         <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
                             <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-full">
@@ -144,7 +141,8 @@
                         </figure>
                         <div class="project-details mt-8 mb-8">
                             <h3 class="text-2xl tracking-tight">Focus On Today</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl">This project is based on a to-do list that allows
+                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">This project is based on
+                                a to-do list that allows
                                 users to manage their daily tasks according to their preferences. I have added
                                 functionality using localStorage, which saves tasks directly in the user’s browser. This
                                 feature is helpful because it prevents users from losing their to-do list. If a user is
@@ -168,17 +166,18 @@
     <hr class="text-[#343a40] mt-20 mb-20">
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="about-me">
-            <div
-                class="about-me-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white md:gap-64.25 md:justify-between gap-9">
-                <div class="about-heading flex mb-5">
-                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52">
+            <div class="about-me-content max-w-7xl mx-auto md:flex md:justify-between gap-8 p-6 flex-col flex">
+                <div class="about-heading mb-5">
+                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52 text-white">
                         About Me
                     </h2>
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13.25 sm:mt-4">
-                    <h4 class="text-2xl mb-5">I am a Frontend Developer based in india. Has Information Technology
+                <div class="about-para md:flex md:flex-col gap-13 w-full md:gap-0 md:w-181">
+                    <h4 class="text-2xl mb-5 text-white">I am a Frontend Developer based in india. Has Information
+                        Technology
                         Background</h4>
-                    <p class="text-gray-400 mb-5">I am a front-end developer based in india looking for exciting
+                    <p class="text-gray-400 mb-5 text-justify md:text-[14px]">I am a front-end developer based in india
+                        looking for exciting
                         opportunities. Has Information
                         Technology background. Likes to focus on accessibility when developing. Passionate and curious
                         about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
@@ -186,7 +185,7 @@
                         to improve skill.</p>
 
                     <a href="about.html"
-                        class="text-[#D3E97A] font-medium hover:border-b border-[#D3E97A] w-35.5 uppercase">More
+                        class="text-black font-medium w-40.5 uppercase bg-[#D3E97A] p-2 flex justify-center items-center rounded-full mt-8">More
                         About
                         Me</a>
                 </div>
@@ -196,10 +195,10 @@
 
     <hr class="text-[#343a40] mt-20 mb-20">
 
-    <div class="container md:max-w-8xl md:mx-auto" id="contactME">
+    <div class="container md:max-w-8xl md:mx-auto" id="contactme">
         <section class="contact-form">
             <div
-                class="form-content max-w-7xl mx-auto md:flex block flex-col md:flex-row p-6 text-white md:gap-64.25 md:justify-between gap-9">
+                class="form-content max-w-7xl mx-auto md:flex flex-col p-6 text-white md:gap-8 md:justify-between gap-9">
                 <div class="about-heading flex gap-10 flex-col">
                     <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-80">
                         Let's Connect
@@ -215,8 +214,8 @@
                                 class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
                     </div>
                 </div>
-                <div class="main-form md:flex md:flex-col gap-13.25 sm:mt-4">
-                    <form action="#" method="get" class="w-150 h-152.50">
+                <div class="main-form md:flex md:flex-col gap-13 md:mt-14">
+                    <form action="#" method="get" class="md:w-full w-full">
                         <div class="contactFields flex flex-col mb-6 gap-2 w-full">
                             <label for="fullname" class="text-gray-200 font-light">Full Name</label>
                             <input type="text" placeholder="john Doe" name="fullname" id="fullname"
@@ -250,8 +249,8 @@
         </section>
     </div>
 
-    <div class="footer-developer-sign flex justify-center items-center">
-        <p class="text-gray-800">@ 2026 Bhavesh Suthar</p>
+    <div class="footer-developer-sign flex justify-center items-center md:mt-1 mt-10">
+        <p class="text-gray-800 text-sm">@ 2026 Bhavesh Suthar</p>
     </div>
     <script src="./src/script.js"></script>
 </body>

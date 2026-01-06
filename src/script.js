@@ -8,28 +8,31 @@ function togglemenu() {
     menuOpen.style.opacity = '0';
     menuOpen.style.transform = 'rotate(90deg)';
 
-    setTimeout(() => {
-        if (mobileNav.classList.contains('show')) {
-            menuOpen.src = 'src/img/menu-close.png';
-        } else {
-            menuOpen.src = 'src/img/menu.png';
-        }
+
+    if (mobileNav.classList.contains('show')) {
+        menuOpen.src = 'src/img/menu-close.png';
+    } else {
+        menuOpen.src = 'src/img/menu.png';
+    }
+    menuOpen.style.opacity = '1';
+    menuOpen.style.transform = 'rotate(0deg)';
 
 
-        menuOpen.style.opacity = '1';
-        menuOpen.style.transform = 'rotate(0deg)';
-    }, 300)
 
 }
 
-const observer = new IntersectionObserver(
-    ([entry]) => {
+const observerOptions = { threshold: 0.1 };
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0", "translate-x-50");
+            setTimeout(() => {
+                entry.target.classList.remove("opacity-0", "translate-x-50");
+            }, 100);
         }
-    },
-    { threshold: 0.2 }
+    });
+}, observerOptions);
 
-);
-
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+});
