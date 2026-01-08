@@ -1,24 +1,19 @@
 function togglemenu() {
-    const mobileNav = document.querySelector('.mobile-nav')
-    const menuOpen = document.querySelector('.menuOpen');
+    const mobileNav = document.getElementById('navMenu');
+    const menuIcon = document.getElementById('menuIcon');
 
+    mobileNav.classList.toggle('-translate-y-full');
+    mobileNav.classList.toggle('translate-y-0');
 
-    mobileNav.classList.toggle('show');
+    const isOpen = mobileNav.classList.contains('translate-y-0');
 
-    menuOpen.style.opacity = '0';
-    menuOpen.style.transform = 'rotate(90deg)';
-
-
-    if (mobileNav.classList.contains('show')) {
-        menuOpen.src = 'src/img/menu-close.png';
+    if (isOpen) {
+        menuIcon.src = 'src/img/menu-close.png';
+        menuIcon.style.transform = 'rotate(90deg)';
     } else {
-        menuOpen.src = 'src/img/menu.png';
+        menuIcon.src = 'src/img/menu.png';
+        menuIcon.style.transform = 'rotate(0deg)';
     }
-    menuOpen.style.opacity = '1';
-    menuOpen.style.transform = 'rotate(0deg)';
-
-
-
 }
 
 const observerOptions = { threshold: 0.1 };
@@ -36,3 +31,17 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 });
+
+
+// const user1 = { name: "Ava", meta: { age: 21 } };
+// const user2 = user1;
+
+// const user3 = { ...user2 }; 
+
+// user2.name = "Liam";
+// user3.meta.age = 30;
+
+// console.log(user1.name);
+// console.log(user1.meta.age);
+// console.log(user2.meta.age);
+// console.log(user3.name);
