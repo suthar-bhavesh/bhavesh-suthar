@@ -32,16 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 });
 
-
-// const user1 = { name: "Ava", meta: { age: 21 } };
-// const user2 = user1;
-
-// const user3 = { ...user2 }; 
-
-// user2.name = "Liam";
-// user3.meta.age = 30;
-
-// console.log(user1.name);
-// console.log(user1.meta.age);
-// console.log(user2.meta.age);
-// console.log(user3.name);

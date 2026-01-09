@@ -34,10 +34,12 @@
         flex flex-col xl:flex-row items-center justify-center xl:block">
 
                     <ul class="flex flex-col xl:flex-row gap-8 xl:gap-10 items-center">
-                        <li><a href="#work" class="text-white text-2xl xl:text-lg hover:text-gray-400">Work</a></li>
+                        <li><a href="#work"
+                                class="text-white text-2xl xl:text-lg hover:text-gray-400 hover:transition-all hover:duration-500">Work</a>
+                        </li>
                         <li><a href="about.html" class="text-white text-2xl xl:text-lg hover:text-gray-400">About</a>
                         </li>
-                        <li><a href="#contactME" class="text-white text-2xl xl:text-lg hover:text-gray-400">Contact</a>
+                        <li><a href="#contactme" class="text-white text-2xl xl:text-lg hover:text-gray-400">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -48,13 +50,14 @@
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="about-me mt-34">
             <div
-                class="about-me-content max-w-7xl mx-auto flex md:mt-34 mt-7 gap-4 p-6 lg:flex-row flex-col lg:items-center md:justify-between">
+                class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
                 <div class=" about-heading flex mb-5">
-                    <h2 class="md:text-6xl text-5xl uppercase font-bebas tracking-wider font-light w-52 text-white">
+                    <h2
+                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
                         About Me
                     </h2>
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13 w-full md:gap-0 md:w-160">
+                <div class="about-para flex items-start flex-col md:w-180 lg:w-160">
                     <h4 class="text-2xl mb-5 text-white">I am a Frontend Developer based in india. Has Information
                         Technology
                         Background</h4>
@@ -68,7 +71,7 @@
                         to improve skill.</p>
 
                     <div class="flex w-full gap-4 items-center mt-6">
-                        <a href="src/Document/Bhavesh Resume.pdf" download="resume-bhavesh.pdf"
+                        <a href="src/Document/Bhavesh Suthar resume.pdf" download="resume-bhavesh.pdf"
                             class="text-black font-medium bg-[#D3E97A] w-50.5 p-2 h-12 rounded-3xl flex items-center gap-3 text-[13px] justify-around">Download
                             Resume <i
                                 class="fa-solid fa-download text-2xl text-black p-2 rounded-full flex justify-center items-center"></i></a>
@@ -86,15 +89,16 @@
         </section>
     </div>
     <div class="container md:max-w-8xl md:mx-auto">
-        <section class="about-me mt-15">
+        <section class="skill-section mt-15">
             <div
-                class="about-me-content max-w-7xl mx-auto flex md:mt-34 mt-7 gap-4 p-6 lg:flex-row flex-col lg:items-center md:justify-between">
-                <div class="about-heading flex mb-5">
-                    <h2 class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-70 text-white">
+                class="tech skill max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
+                <div class="tech skill heading flex mb-5">
+                    <h2
+                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
                         Technical skill
                     </h2>
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13 sm:mt-4 md:w-160">
+                <div class="about-para md:flex md:flex-col gap-13 sm:mt-4 md:w-180 lg:w-160">
                     <p class="text-gray-400 mb-5">I'm always learning and pushing myself toward new achievements.
                         Keeping up with the latest technology gives me the freedom to adapt and keeps my skills sharp.
                     </p>
@@ -123,33 +127,57 @@
         <section class="myexp">
             <div
                 class="my-exp max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
-                <div class="exp-heading flex gap-10 flex-col">
+                <div
+                    class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-70 text-white">
                     <h2
                         class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
                         my experience
                     </h2>
-                    <div class="social-link flex items-start gap-2 flex-col">
-                        <div class="designation-&-year flex md:justify-between md:items-center w-full flex-col">
-                            <h3 class="text-white text-xl">Freelance Web Developer</h3>
+                </div>
+                <div class="exp section flex items-start gap-10 flex-col md:w-180 lg:w-160">
+                    <div class="exp cart flex md:justify-between w-full flex-col gap-10">
+                        <div class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3">
+                            <h3 class="text-white text-xl font-light">Freelance Web Developer</h3>
                             <p class="text-sm text-[#C7C7C7]">August 2024 - Present</p>
-                            <ol class="text-white">
-                                <li>Design and develop responsive user interfaces for websites.</li>
-                                <li>Build and optimize frontend components using HTML, CSS, JavaScript, and modern
-                                    frameworks</li>
-                                <li>Ensure cross-browser compatibility, performance, and smooth user experience.</li>
-                                <li>Integrate APIs and dynamic data in collaboration with backend developers.</li>
-                                <li>Identify and fix UI bugs, improve usability.</li>
-                            </ol>
                         </div>
-                        <div class="designation-&-year">
-                            <h3 class="text-white text-xl font-light">Frontende Developer Intern <br> <span
-                                    class="text-sm">Capritech Global Services
+                        <div class="job-decs">
+                            <p class="text-gray-400 text-justify">Design and develop responsive, user friendly
+                                interfaces for
+                                websites
+                                with a strong focus
+                                on usability and visual consistency across devices. Build, optimize, and maintain
+                                frontend components using HTML, CSS, JavaScript, and modern frameworks to deliver
+                                fast
+                                and engaging experiences. Ensure cross browser compatibility, high performance, and
+                                smooth interactions for all users. Collaborate closely with backend developers to
+                                integrate APIs and dynamic data seamlessly into the interface. Continuously
+                                identify,
+                                troubleshoot, and fix UI bugs while refining layouts, interactions, and overall
+                                usability to improve the end user experience.</p>
+                        </div>
+                    </div>
+                    <div class="exp cart flex md:justify-between w-full flex-col gap-10">
+                        <div class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3">
+                            <h3 class="text-white text-xl font-light">Frontend Developer Intern <br> <span
+                                    class="text-sm text-[#D3E97A]">Capritech Global Services Pvt. Ltd.
                                     (CTGS)</span></h3>
                             <p class="text-sm text-[#C7C7C7]">March 2024 - June 2024</p>
                         </div>
+                        <div class="job-decs">
+                            <p class="text-gray-400 text-justify">Worked on front end web development projects using
+                                HTML, CSS,
+                                JavaScript, and Bootstrap, contributing to the design and development of school
+                                websites
+                                with responsive and user friendly interfaces. Built a strong understanding of web
+                                structure, layout design, and clean coding practices while gaining hands on
+                                experience
+                                in UI design. Collaborated closely with team members to maintain project quality and
+                                consistency, and consistently delivered professional, high quality results within
+                                tight
+                                deadlines.</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </div>
@@ -174,7 +202,7 @@
                                 class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
                     </div>
                 </div>
-                <div class="main-form mt-14 w-full lg:mt-0">
+                <div class="main-form mt-14 w-full lg:mt-0 md:w-180 lg:w-160">
                     <form action="#" method="get" class="w-full text-white">
                         <div class="contactFields flex flex-col mb-6 gap-2">
                             <label for="fullname" class="text-gray-200 font-light">Full Name</label>

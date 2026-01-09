@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" class="invert">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="./src/style.css">
     <title>Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly Websites</title>
@@ -34,18 +34,19 @@
 
                     <ul class="flex flex-col xl:flex-row gap-8 xl:gap-10 items-center">
                         <li><a href="#work" class="text-white text-2xl xl:text-lg hover:text-gray-400">Work</a></li>
-                        <li><a href="about.html" class="text-white text-2xl xl:text-lg hover:text-gray-400">About</a>
+                        <li><a href="about.html" target="_blank"
+                                class="text-white text-2xl xl:text-lg hover:text-gray-400">About</a>
                         </li>
-                        <li><a href="#contactME" class="text-white text-2xl xl:text-lg hover:text-gray-400">Contact</a>
+                        <li><a href="#contactme" class="text-white text-2xl xl:text-lg hover:text-gray-400">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section class="w-full">
+        <section>
             <div
-                class="flex justify-center md:mt-34 items-center mx-auto max-w-7xl flex-col md:flex-row p-6 m-20 gap-9">
-                <div class="flex-1 md:text-left">
+                class="max-w-7xl mx-auto lg:flex-row flex-col md:mt-34 mt-15 flex gap-10 md:justify-between p-6 text-left lg:gap-40">
+                <div class="flex-1 md:text-left lg:w-1/2">
                     <h1 class="text-white text-5xl md:text-[55px] font-bebas uppercase leading-tight">
                         Hi, i am <br>Bhavesh Suthar.
                     </h1>
@@ -54,7 +55,7 @@
                         and user-friendly websites with clean code and modern UI Design.
                     </p>
                     <div class="flex items-center justify-center md:justify-start gap-4 mt-9">
-                        <a href="#contactME"
+                        <a href="#contactme"
                             class="bg-[#D3E97A] px-6 py-3 rounded-full uppercase text-black font-bold text-sm">
                             Contact Me
                         </a>
@@ -65,8 +66,8 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center md:justify-end">
-                    <div class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden shadow-2xl">
+                <div class="flex justify-center">
+                    <div class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden">
                         <img src="src/img/Bhavesh Pic.png" class="w-full h-full object-cover" alt="Bhavesh Pic">
                     </div>
                 </div>
@@ -171,23 +172,26 @@
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="about-me">
             <div
-                class="about-me-content max-w-7xl mx-auto flex md:mt-34 mt-7 gap-4 p-6 lg:flex-row flex-col lg:items-center md:items-center">
-                <div class="about-heading mb-5 space-y-6 flex-1 text-left md:w-160">
-                    <h2 class="md:text-[55px] text-5xl uppercase font-bebas tracking-wider font-light w-52 text-white">
+                class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
+                <div class=" about-heading flex mb-5">
+                    <h2
+                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
                         About Me
                     </h2>
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13 w-full md:gap-0 md:w-160">
+                <div class="about-para flex items-start flex-col md:w-180 lg:w-160">
                     <h4 class="text-2xl mb-5 text-white">I am a Frontend Developer based in india. Has Information
                         Technology
                         Background</h4>
                     <p class="text-gray-400 mb-5 text-justify md:text-[14px]">I am a front-end developer based in india
-                        looking for exciting
+                        looking for
+                        exciting
                         opportunities. Has Information
                         Technology background. Likes to focus on accessibility when developing. Passionate and curious
                         about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
                         I am not programming, I enjoy playing Singing, acting etc. Learning more
                         to improve skill.</p>
+
                     <a href="about.html"
                         class="text-black font-medium w-40.5 uppercase bg-[#D3E97A] p-2 flex justify-center items-center rounded-full mt-8">More
                         About
@@ -202,7 +206,7 @@
     <div class="container md:max-w-8xl md:mx-auto" id="contactme">
         <section class="contact-form">
             <div
-                class="form-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:gap-40">
+                class="form-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
                 <div class="about-heading flex gap-10 flex-col">
                     <h2
                         class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
@@ -219,7 +223,7 @@
                                 class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
                     </div>
                 </div>
-                <div class="main-form mt-14 w-full lg:mt-0">
+                <div class="main-form mt-14 w-full lg:mt-0 md:w-180 lg:w-160">
                     <form action="#" method="get" class="w-full text-white">
                         <div class="contactFields flex flex-col mb-6 gap-2">
                             <label for="fullname" class="text-gray-200 font-light">Full Name</label>
