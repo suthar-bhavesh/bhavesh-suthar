@@ -22,7 +22,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             setTimeout(() => {
-                entry.target.classList.remove("opacity-0", "translate-x-50");
+                entry.target.classList.remove("opacity-0", "translate-y-50");
             }, 100);
         }
     });
@@ -31,4 +31,3 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 });
-

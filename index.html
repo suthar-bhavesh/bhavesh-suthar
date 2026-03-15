@@ -43,7 +43,7 @@
         </header>
         <section>
             <div
-                class="max-w-7xl mx-auto lg:flex-row flex-col md:mt-34 mt-15 flex gap-10 md:justify-between p-6 text-left lg:gap-40">
+                class="max-w-7xl mx-auto lg:flex-row flex-col md:mt-34 mt-15 flex gap-10 md:justify-between p-6 text-left lg:gap-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
                 <div class="flex-1 md:text-left">
                     <h1 class="text-white text-5xl md:text-[55px] font-bebas uppercase leading-tight">
                         Hi, i am <br>Bhavesh Suthar.
@@ -57,16 +57,18 @@
                             class="bg-[#D3E97A] px-6 py-3 rounded-full uppercase text-black font-medium text-sm">
                             Contact Me
                         </a>
-                        <a href="#" class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
+                        <a href="https://github.com/suthar-bhavesh"
+                            class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
                                 class="fa-brands fa-github"></i></a>
-                        <a href="#" class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
+                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
+                            class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="flex justify-center">
                     <div class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden">
-                        <img src="src/img/Bhavesh Pic.png" class="w-full h-full object-cover" alt="Bhavesh Pic">
+                        <img src="src/img/Bhavesh Pic.png" class="w-full h-full" alt="Bhavesh Pic">
                     </div>
                 </div>
             </div>
@@ -86,63 +88,74 @@
                 </div>
 
                 <!-- Project card -->
-                <div class="mt-20 md:flex md:flex-col md:gap-30 flex flex-col gap-5 w-84 md:w-full">
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-row md:w-full p-4 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000 lg:w-full"
+                <div class="mt-20 gap-5 md:block grid-cols-3 block lg:grid p-5">
+                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
                         id="content">
-                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
-                            <img src="src/img/tic-tac-toe.png" alt="Tic Tac Toe" class="w-full h-full">
+                        <figure class="w-full h-60 overflow-hidden">
+                            <img src="/src/img/bella-vista.png" alt="bella-vista" class="w-full h-60">
                         </figure>
-                        <div class="project-details mt-8 mb-8">
-                            <h3 class="text-2xl tracking-tight">Tic Tac Toe</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">A modern take on the
-                                classic Tic Tac Toe game
-                                with simple design and intuitive
-                                gameplay.
+                        <div class="project-details mt-5">
+                            <h3 class="text-2xl tracking-tight">Bella Vista Restaurant</h3>
+                            <p class="mt-4 text-gray-400 text-justify md:text-[14px]">Bella Vista provides a secure and
+                                user-friendly interface for online food delivery, ensuring a safe booking experience for
+                                all customers.
                             </p>
+                            <div class="flex w-full gap-4 items-center text-white flex-wrap mt-5">
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
+                            </div>
                             <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://tic-stack.netlify.app/"
+                                <a href="https://bella-vista-res.netlify.app/"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
                                     Demo</a>
-                                <a href="#"
+                                <a href="https://github.com/suthar-bhavesh/bella-vista"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-row md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000"
+                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
                         id="content">
-                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
-                            <img src="src/img/Exclusive Ecommerce webiste pic.png" alt="Exclusive Website pic"
-                                class="w-full h-full">
+                        <figure class="w-full h-60 overflow-hidden">
+                            <img src="/src/img/laundry-wala.png" alt="laundryWala" class="w-full h-60">
                         </figure>
-                        </figure>
-                        <div class="project-details mt-8 mb-8">
-                            <h3 class="text-2xl tracking-tight">Exclusive Ecommerce Website</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">This exclusive e-commerce
-                                website was built to
-                                showcase a premium online shopping experience. It features a clean and modern
-                                interface, responsive design across all devices, and smooth user interactions. The
-                                project highlights product listing, detailed product views, cart functionality, and
-                                a streamlined checkout flow, with a strong focus on usability, performance, and
-                                visual consistency.
+                        <div class="project-details mt-5">
+                            <h3 class="text-2xl tracking-tight">Laundry Wala</h3>
+                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">Laundry Wala is an
+                                online service platform designed for seamless order placement and automated customer
+                                communication. It features newsletter subscriptions and real-time email notifications
+                                for order confirmations using Email.js.
                             </p>
+                            <div class="flex w-full gap-4 items-center text-white flex-wrap mt-5">
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium">JAVASCRIPT</span>
+                                <span
+                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
+                            </div>
                             <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://exclusive-ecommerce-shopping.netlify.app/"
+                                <a href="https://laundry-mart-02.netlify.app/"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
                                     Demo</a>
-                                <a href="#"
+                                <a href="https://github.com/suthar-bhavesh/Laundry-Wallah-01"
                                     class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-cards block justify-between gap-12 items-center bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-row md:w-full p-4.25 reveal opacity-0 translate-x-50 transition-ease-in-out duration-1000"
+                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
                         id="content">
-                        <figure class="w-full h-full overflow-hidden md:w-105 md:h-68.5">
-                            <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-full">
+                        <figure class="w-full h-60 overflow-hidden">
+                            <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-60">
                         </figure>
-                        </figure>
-                        <div class="project-details mt-8 mb-8">
+                        <div class="project-details mt-5">
                             <h3 class="text-2xl tracking-tight">Focus On Today</h3>
                             <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">This project is based on
                                 a to-do list that allows
@@ -170,7 +183,7 @@
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="about-me" id="about">
             <div
-                class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
+                class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
                 <div class=" about-heading flex mb-5">
                     <h2
                         class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
@@ -191,7 +204,7 @@
                         to improve skill.</p>
 
                     <div class="flex w-full gap-4 items-center mt-6">
-                        <a href="src/Document/Bhavesh Suthar resume.pdf" download="resume-bhavesh.pdf"
+                        <a href="src/Document/Bhavesh resume.pdf" download="resume-bhavesh.pdf"
                             class="text-black font-medium bg-[#D3E97A] w-50.5 p-2 h-12 rounded-3xl flex items-center gap-3 text-[13px] justify-around">Download
                             Resume <i
                                 class="fa-solid fa-download text-2xl text-black p-2 rounded-full flex justify-center items-center"></i></a>
@@ -204,7 +217,7 @@
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="skill-section mt-15">
             <div
-                class="tech skill max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
+                class="tech skill max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
                 <div class="tech skill heading flex mb-5">
                     <h2
                         class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
@@ -218,18 +231,27 @@
 
                     <div class="flex w-full gap-4 items-center text-white flex-wrap">
                         <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:bg-gray-400 hover:text-black">HTML</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22">CSS</span>
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
                         <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40">JAVASCRIPT</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25">FIGMA</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25">GITHUB</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25">GIT</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-42">TAILWIND
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium">JAVASCRIPT</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">FIGMA</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GIT</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-42 hover:text-black hover:bg-white hover:transition-all font-medium">TAILWIND
                             CSS</span>
                         <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-35">BOOTSTRAP</span>
-                        <span class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32">REST API</span>
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-35 hover:text-black hover:bg-white hover:transition-all font-medium">BOOTSTRAP</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium">REST
+                            API</span>
+                        <span
+                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium">REACT.JS</span>
                     </div>
                 </div>
             </div>
@@ -239,7 +261,7 @@
     <div class="container md:max-w-8xl md:mx-auto">
         <section class="myexp">
             <div
-                class="my-exp max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
+                class="my-exp max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
                 <div class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-70 text-white">
                     <h2
                         class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
@@ -249,23 +271,21 @@
                 <div class="exp section flex items-start gap-10 flex-col md:w-180 lg:w-160">
                     <div class="exp cart flex md:justify-between w-full flex-col gap-10">
                         <div class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3">
-                            <h3 class="text-white text-xl font-light">Freelance Web Developer</h3>
+                            <h3 class="text-white text-xl font-light">IT Executive <br> <span
+                                    class="text-sm text-[#D3E97A]">Moxsh Overseas Educon Pvt. Ltd</span></h3>
                             <p class="text-sm text-[#C7C7C7]">August 2024 - Present</p>
                         </div>
                         <div class="job-decs">
-                            <p class="text-gray-400 text-justify">Design and develop responsive, user friendly
-                                interfaces for
-                                websites
-                                with a strong focus
-                                on usability and visual consistency across devices. Build, optimize, and maintain
-                                frontend components using HTML, CSS, JavaScript, and modern frameworks to deliver
-                                fast
-                                and engaging experiences. Ensure cross browser compatibility, high performance, and
-                                smooth interactions for all users. Collaborate closely with backend developers to
-                                integrate APIs and dynamic data seamlessly into the interface. Continuously
-                                identify,
-                                troubleshoot, and fix UI bugs while refining layouts, interactions, and overall
-                                usability to improve the end user experience.</p>
+                            <p class="text-gray-400 text-justify">Conduct
+                                rigorous testing
+                                for internally developed applications, using programming knowledge to identify bugs and
+                                recommend performance optimizations.Partner with developers to refine, test, and
+                                deploy new
+                                features for internal systems, ensuring seamless user experiences Manage IT-related
+                                operations and webinar platform
+                                support,
+                                including technical troubleshooting and session organization
+                            </p>
                         </div>
                     </div>
                     <div class="exp cart flex md:justify-between w-full flex-col gap-10">
@@ -306,18 +326,18 @@
                         Let's Connect
                     </h2>
                     <div class="social-link flex items-center gap-2">
-                        <a href="https://github.com/suthar-bhavesh"><i
+                        <a href="https://github.com/suthar-bhavesh" target="_blank"><i
                                 class="fa-brands fa-github text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"><i
+                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/" target="_blank"><i
                                 class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://x.com/Bhavesh37820418"><i
+                        <a href="https://x.com/Bhavesh37820418" target="_blank"><i
                                 class="fa-brands fa-x-twitter text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://hosturl.info/31UQuC"><i
+                        <a href="https://hosturl.info/31UQuC" target="_blank"><i
                                 class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
                     </div>
                 </div>
                 <div class="main-form mt-14 w-full lg:mt-0 md:w-180 lg:w-160">
-                    <form action="#" method="get" class="w-full text-white">
+                    <form action="#" method="post" class="w-full text-white">
                         <div class="contactFields flex flex-col mb-6 gap-2">
                             <label for="fullname" class="text-gray-200 font-light">Full Name</label>
                             <input type="text" placeholder="john Doe" name="fullname" id="fullname"
