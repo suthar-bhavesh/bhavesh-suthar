@@ -39,9 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     MyForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-
         const FormconfirmBox = document.createElement('div');
-        FormconfirmBox.className = "inset-0 bg-opacity-50 z-50 absolute w-full left-0 flex justify-center items-center bg-black-60 backdrop-blur-sm z-50"
+        FormconfirmBox.className = "inset-0 bg-opacity-50 z-50 absolute w-full left-0 flex justify-center items-center bg-black-60 backdrop-blur-[2px] z-50"
 
         FormconfirmBox.innerHTML = `
             <div class="success-message bg-[#222222] rounded-2xl p-5 text-center transform-all scale-100 animate-fade-in duration-300 transition-all max-w-sm gap-3 flex flex-col items-center absolute top-48">
@@ -81,11 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 Inputerror.textContent = "";
                 MyForm.append(FormconfirmBox)
 
-
                 MyForm.reset();
 
                 Userinput.forEach(inputs => inputs.style.border = "1px solid #ccc");
-
 
                 const CloseBtn = FormconfirmBox.querySelector('.closeBtn')
 
@@ -93,8 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     FormconfirmBox.remove();
                 })
             });
-
-
 
         } else {
             Error.forEach((Inputerror) => {
