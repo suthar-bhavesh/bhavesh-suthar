@@ -663,20 +663,20 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
-  .text-\[\#1A1A1A\] {
-    color: #1A1A1A;
+  .text-\[\#6c757d\] {
+    color: #6c757d;
   }
   .text-\[\#343a40\] {
     color: #343a40;
+  }
+  .text-\[\#212529\] {
+    color: #212529;
   }
   .text-\[\#C7C7C7\] {
     color: #C7C7C7;
   }
   .text-\[\#D3E97A\] {
     color: #D3E97A;
-  }
-  .text-\[white\] {
-    color: white;
   }
   .text-black {
     color: var(--color-black);
