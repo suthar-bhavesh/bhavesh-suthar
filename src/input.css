@@ -1,66 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-    --font-size-xl: 100px;
-    --font-poppins: "Poppins", sans-serif;
-    --font-bebas: "Bebas Neue", sans-serif;
-    --font-bbh-bogle: "BBH Bogle", sans-serif;
+  --font-size-xl: 100px;
+  --font-poppins: "Poppins", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-bbh-bogle: "BBH Bogle", sans-serif;
 
-    @keyframes draw-check-short {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            width: 25px;
-            opacity: 1;
-        }
+  @keyframes draw-check-short {
+    0% {
+      opacity: 0;
     }
 
-    @keyframes draw-check-long {
-        0% {
-            opacity: 0;
-        }
+    100% {
+      width: 25px;
+      opacity: 1;
+    }
+  }
 
-        100% {
-            width: 50px;
-            opacity: 1;
-        }
+  @keyframes draw-check-long {
+    0% {
+      opacity: 0;
     }
 
-    @keyframes Circle-Rotate {
-        0% {
-            opacity: 0;
-            transform: scale(0) rotateY(0deg);
-        }
+    100% {
+      width: 50px;
+      opacity: 1;
+    }
+  }
 
-        100% {
-            opacity: 1;
-            transform: scale(1) rotateY(360deg);
-        }
+  @keyframes Circle-Rotate {
+    0% {
+      opacity: 0;
+      transform: scale(0) rotateY(0deg);
     }
 
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-            transform: translateY(0);
-        }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotateY(360deg);
+    }
+  }
 
-        100% {
-            opacity: 1;
-            transform: translateY(-10px);
-        }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
     }
 
+    100% {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  }
 
-    --animate-fade-in: fade-in 0.5s transition-all;
+  --animate-fade-in: fade-in 0.5s transition-all;
 
-    --animate-draw-check-short: draw-check-short 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  --animate-draw-check-short: draw-check-short 0.2s
+    cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 
-    --animate-draw-check-long: draw-check-long 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  --animate-draw-check-long: draw-check-long 0.2s
+    cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 
-    --animate-Circle-Rotate: Circle-Rotate 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-
+  --animate-Circle-Rotate: Circle-Rotate 0.2s
+    cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }

@@ -1,409 +1,633 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>
+      Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly
+      Websites
+    </title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/output.css">
-    <title>Bhavesh Suthar | Frontend Developer | Building Accessible & User-Friendly Websites</title>
-</head>
-
-<body class="bg-black">
+  <body class="bg-black">
     <div class="container w-full md:mx-auto">
-        <header class="bg-black">
-            <nav class="p-5 flex justify-between items-center w-full relative bg-transparent">
-                <div class="flex items-center z-1001">
-                    <a href="index.html" class="flex items-center gap-3">
-                        <img src="src/img/logo.png" alt="logo" class="w-10 h-10 invert" fetchpriority="high">
-                        <p class="text-white font-bebas uppercase text-2xl">Bhavesh Suthar</p>
-                    </a>
-                </div>
+      <header class="bg-black">
+        <nav
+          class="p-5 flex justify-between items-center w-full relative bg-transparent"
+        >
+          <div class="flex items-center z-1001">
+            <a href="index.html" class="flex items-center gap-3">
+              <img
+                src="src/img/logo.png"
+                alt="logo"
+                class="w-10 h-10 invert"
+                fetchpriority="high"
+              />
+              <p class="text-white font-bebas uppercase text-2xl">
+                Bhavesh Suthar
+              </p>
+            </a>
+          </div>
 
-                <div class="xl:hidden z-99999 cursor-pointer" onclick="togglemenu()">
-                    <img src="src/img/menu.png" id="menuIcon" class="w-8 h-8 invert transition-all duration-300"
-                        fetchpriority="high" alt="menu">
-                </div>
+          <div class="xl:hidden z-99999 cursor-pointer" onclick="togglemenu()">
+            <img
+              src="src/img/menu.png"
+              id="menuIcon"
+              class="w-8 h-8 invert transition-all duration-300"
+              fetchpriority="high"
+              alt="menu"
+            />
+          </div>
 
-                <div id="navMenu" class="mobile-nav absolute xl:relative top-0 left-0 w-full xl:w-auto h-[60vh] xl:h-auto bg-black xl:bg-transparent z-9999 
-        -translate-y-full xl:translate-y-0 transition-transform duration-500 ease-in-out 
-        flex flex-col xl:flex-row items-center justify-center xl:block">
-
-                    <ul class="flex flex-col xl:flex-row gap-8 xl:gap-10 items-center">
-                        <li><a href="#work" class="text-white text-2xl xl:text-lg hover:text-gray-400">Work</a></li>
-                        <li><a href="#about" class="text-white text-2xl xl:text-lg hover:text-gray-400">About</a>
-                        </li>
-                        <li><a href="#contactme" class="text-white text-2xl xl:text-lg hover:text-gray-400">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section>
+          <div
+            id="navMenu"
+            class="mobile-nav absolute xl:relative top-0 left-0 w-full xl:w-auto h-[60vh] xl:h-auto bg-black xl:bg-transparent z-9999 -translate-y-full xl:translate-y-0 transition-transform duration-500 ease-in-out flex flex-col xl:flex-row items-center justify-center xl:block"
+          >
+            <ul class="flex flex-col xl:flex-row gap-8 xl:gap-10 items-center">
+              <li>
+                <a
+                  href="#work"
+                  class="text-white text-2xl xl:text-lg hover:text-gray-400"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-white text-2xl xl:text-lg hover:text-gray-400"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contactme"
+                  class="text-white text-2xl xl:text-lg hover:text-gray-400"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div
+          class="max-w-7xl mx-auto lg:flex-row flex-col md:mt-34 mt-15 flex gap-10 md:justify-between p-6 text-left lg:gap-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000"
+        >
+          <div class="flex-1 md:text-left">
+            <h1
+              class="text-white text-5xl md:text-[55px] font-bebas uppercase leading-tight"
+            >
+              Hi, i am <br />Bhavesh Suthar.
+            </h1>
+            <p class="text-gray-400 md:text-[14px]">
+              I am a Frontend Developer focused on building accessible,
+              responsive, and user-friendly websites with clean code and modern
+              UI Design.
+            </p>
             <div
-                class="max-w-7xl mx-auto lg:flex-row flex-col md:mt-34 mt-15 flex gap-10 md:justify-between p-6 text-left lg:gap-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
-                <div class="flex-1 md:text-left">
-                    <h1 class="text-white text-5xl md:text-[55px] font-bebas uppercase leading-tight">
-                        Hi, i am <br>Bhavesh Suthar.
-                    </h1>
-                    <p class="text-gray-400 md:text-[14px]">
-                        I am a Frontend Developer focused on building accessible, responsive,
-                        and user-friendly websites with clean code and modern UI Design.
-                    </p>
-                    <div class="flex items-center justify-center md:justify-start gap-4 mt-9">
-                        <a href="#contactme"
-                            class="bg-[#D3E97A] px-6 py-3 rounded-full uppercase text-black font-medium text-sm">
-                            Contact Me
-                        </a>
-                        <a href="https://github.com/suthar-bhavesh"
-                            class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
-                            class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="flex justify-center">
-                    <div class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden">
-                        <img src="src/img/Bhavesh Pic.png" class="w-full h-full" alt="Bhavesh Pic" fetchpriority="high">
-                    </div>
-                </div>
+              class="flex items-center justify-center md:justify-start gap-4 mt-9"
+            >
+              <a
+                href="#contactme"
+                class="bg-[#D3E97A] px-6 py-3 rounded-full uppercase text-black font-medium text-sm"
+              >
+                Contact Me
+              </a>
+              <a
+                href="https://github.com/suthar-bhavesh"
+                class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
+                class="bg-[#222222] p-3 rounded-full text-[#D3E97A] text-2xl"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-        </section>
+          </div>
+
+          <div class="flex justify-center">
+            <div
+              class="bg-[#edf6f9] w-72 h-80 md:w-84 md:h-90 rounded-2xl overflow-hidden"
+            >
+              <img
+                src="src/img/Bhavesh Pic.png"
+                class="w-full h-full"
+                alt="Bhavesh Pic"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <hr class="text-[#343a40] mt-20 mb-20 w-full">
+    <hr class="text-[#343a40] mt-20 mb-20 w-full" />
     <div class="container md:max-w-8xl md:mx-auto" id="work">
-        <section class="text-white" id="project w-full">
-            <div class="max-w-7xl mx-auto items-center md:flex-col flex flex-col md:flex md:p-6 md:items-start">
-                <div class="p-6 md:p-0">
-                    <h2 class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light">
-                        My Projects
-                    </h2>
-                    <p class="mt-4 text-gray-400 max-w-xl md:text-[14px]">
-                        Here are some of the selected projects that showcase my passion for front-end development.
-                    </p>
-                </div>
+      <section class="text-white" id="project w-full">
+        <div
+          class="max-w-7xl mx-auto items-center md:flex-col flex flex-col md:flex md:p-6 md:items-start"
+        >
+          <div class="p-6 md:p-0">
+            <h2
+              class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light"
+            >
+              My Projects
+            </h2>
+            <p class="mt-4 text-gray-400 max-w-xl md:text-[14px]">
+              Here are some of the selected projects that showcase my passion
+              for front-end development.
+            </p>
+          </div>
 
-                <!-- Project card -->
-                <div class="mt-20 gap-5 md:block grid-cols-3 block lg:grid p-5">
-                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
-                        id="content">
-                        <figure class="w-full h-60 overflow-hidden">
-                            <img src="/src/img/bella-vista.png" alt="bella-vista" class="w-full h-60"
-                                fetchpriority="high">
-                        </figure>
-                        <div class="project-details mt-5">
-                            <h3 class="text-2xl tracking-tight">Bella Vista Restaurant</h3>
-                            <p class="mt-4 text-gray-400 text-justify md:text-[14px]">Bella Vista provides a secure and
-                                user-friendly interface for online food delivery, ensuring a safe booking experience for
-                                all customers.
-                            </p>
-                            <div class="flex w-full gap-4 items-center text-white flex-wrap mt-5">
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
-                            </div>
-                            <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://bella-vista-res.netlify.app/"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
-                                    Demo</a>
-                                <a href="https://github.com/suthar-bhavesh/bella-vista"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
-                        id="content">
-                        <figure class="w-full h-60 overflow-hidden">
-                            <img src="/src/img/laundry-wala.png" alt="laundryWala" class="w-full h-60"
-                                fetchpriority="high">
-                        </figure>
-                        <div class="project-details mt-5">
-                            <h3 class="text-2xl tracking-tight">Laundry Wala</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">Laundry Wala is an
-                                online service platform designed for seamless order placement and automated customer
-                                communication. It features newsletter subscriptions and real-time email notifications
-                                for order confirmations using Email.js.
-                            </p>
-                            <div class="flex w-full gap-4 items-center text-white flex-wrap mt-5">
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium">JAVASCRIPT</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
-                            </div>
-                            <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://laundry-mart-02.netlify.app/"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
-                                    Demo</a>
-                                <a href="https://github.com/suthar-bhavesh/Laundry-Wallah-01"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
-                        id="content">
-                        <figure class="w-full h-60 overflow-hidden">
-                            <img src="src/img/focus-on-today.png" alt="Focus on today pic" class="w-full h-60"
-                                fetchpriority="high">
-                        </figure>
-                        <div class="project-details mt-5">
-                            <h3 class="text-2xl tracking-tight">Focus On Today</h3>
-                            <p class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]">This project is based on
-                                a to-do list that allows
-                                users to manage their daily tasks according to their preferences. I have added
-                                functionality using localStorage, which saves tasks directly in the user’s browser. This
-                                feature is helpful because it prevents users from losing their to-do list. If a user is
-                                unable to complete their tasks in a day, they can save the list without any hassle and
-                                continue later.
-                            </p>
-                            <div class="flex w-full gap-4 items-center text-white flex-wrap mt-5">
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium">JAVASCRIPT</span>
-                                <span
-                                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
-                            </div>
-                            <div class="project-info flex items-center mt-5 gap-6">
-                                <a href="https://focus-on-todo.netlify.app/"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Live
-                                    Demo</a>
-                                <a href="#"
-                                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center">Github
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <hr class="text-[#343a40] mt-20 mb-20 w-full">
-    <div class="container md:max-w-8xl md:mx-auto">
-        <section class="about-me" id="about">
+          <!-- Project card -->
+          <div class="mt-20 gap-5 md:block grid-cols-3 block lg:grid p-5">
             <div
-                class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
-                <div class=" about-heading flex mb-5">
-                    <h2
-                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
-                        About Me
-                    </h2>
+              class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
+              id="content"
+            >
+              <figure class="w-full h-60 overflow-hidden">
+                <img
+                  src="/src/img/bella-vista.png"
+                  alt="bella-vista"
+                  class="w-full h-60"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="project-details mt-5">
+                <h3 class="text-2xl tracking-tight">Bella Vista Restaurant</h3>
+                <p class="mt-4 text-gray-400 text-justify md:text-[14px]">
+                  Bella Vista provides a secure and user-friendly interface for
+                  online food delivery, ensuring a safe booking experience for
+                  all customers.
+                </p>
+                <div
+                  class="flex w-full gap-4 items-center text-white flex-wrap mt-5"
+                >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >HTML</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >CSS</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >GITHUB</span
+                  >
                 </div>
-                <div class="about-para flex items-start flex-col md:w-180 lg:w-160">
-                    <h4 class="text-2xl mb-5 text-white">I am a Frontend Developer based in india. Has Information
-                        Technology
-                        Background</h4>
-                    <p class="text-gray-400 mb-5 text-justify md:text-[14px]">I am a front-end developer based in india
-                        looking for
-                        exciting
-                        opportunities. Has Information
-                        Technology background. Likes to focus on accessibility when developing. Passionate and curious
-                        about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While
-                        I am not programming, I enjoy playing Singing, acting etc. Learning more
-                        to improve skill.</p>
-
-                    <div class="flex w-full gap-4 items-center mt-6">
-                        <a href="src/Document/Bhavesh resume.pdf" download="resume-bhavesh.pdf"
-                            class="text-black font-medium bg-[#D3E97A] w-50.5 p-2 h-12 rounded-3xl flex items-center gap-3 text-[13px] justify-around">Download
-                            Resume <i
-                                class="fa-solid fa-download text-2xl text-black p-2 rounded-full flex justify-center items-center"></i></a>
-                    </div>
+                <div class="project-info flex items-center mt-5 gap-6">
+                  <a
+                    href="https://bella-vista-livid.vercel.app/"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/suthar-bhavesh/bella-vista"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Github
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
-    </div>
-    <hr class="text-[#343a40] mt-20 mb-20">
-    <div class="container md:max-w-8xl md:mx-auto">
-        <section class="skill-section mt-15">
             <div
-                class="tech skill max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
-                <div class="tech skill heading flex mb-5">
-                    <h2
-                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
-                        Technical skill
-                    </h2>
+              class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
+              id="content"
+            >
+              <figure class="w-full h-60 overflow-hidden">
+                <img
+                  src="/src/img/laundry-wala.png"
+                  alt="laundryWala"
+                  class="w-full h-60"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="project-details mt-5">
+                <h3 class="text-2xl tracking-tight">Laundry Wala</h3>
+                <p
+                  class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]"
+                >
+                  Laundry Wala is an online service platform designed for
+                  seamless order placement and automated customer communication.
+                  It features newsletter subscriptions and real-time email
+                  notifications for order confirmations using Email.js.
+                </p>
+                <div
+                  class="flex w-full gap-4 items-center text-white flex-wrap mt-5"
+                >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >HTML</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >CSS</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >JAVASCRIPT</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >GITHUB</span
+                  >
                 </div>
-                <div class="about-para md:flex md:flex-col gap-13 sm:mt-4 md:w-180 lg:w-160">
-                    <p class="text-gray-400 mb-5">I'm always learning and pushing myself toward new achievements.
-                        Keeping up with the latest technology gives me the freedom to adapt and keeps my skills sharp.
-                    </p>
-
-                    <div class="flex w-full gap-4 items-center text-white flex-wrap">
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">HTML</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium">CSS</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium">JAVASCRIPT</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">FIGMA</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GITHUB</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium">GIT</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-42 hover:text-black hover:bg-white hover:transition-all font-medium">TAILWIND
-                            CSS</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-35 hover:text-black hover:bg-white hover:transition-all font-medium">BOOTSTRAP</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium">REST
-                            API</span>
-                        <span
-                            class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium">REACT.JS</span>
-                    </div>
+                <div class="project-info flex items-center mt-5 gap-6">
+                  <a
+                    href="https://laundry-wallah-01.vercel.app/"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/suthar-bhavesh/Laundry-Wallah-01"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Github
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
-    </div>
-    <hr class="text-[#343a40] mt-20 mb-20">
-    <div class="container md:max-w-8xl md:mx-auto">
-        <section class="myexp">
             <div
-                class="my-exp max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000">
-                <div class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-70 text-white">
-                    <h2
-                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
-                        my experience
-                    </h2>
+              class="project-cards block gap-3 bg-[#1A1A1A] rounded-2xl md:p-4 md:flex md:flex-col p-4 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000 w-full mb-5"
+              id="content"
+            >
+              <figure class="w-full h-60 overflow-hidden">
+                <img
+                  src="src/img/focus-on-today.png"
+                  alt="Focus on today pic"
+                  class="w-full h-60"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="project-details mt-5">
+                <h3 class="text-2xl tracking-tight">Focus On Today</h3>
+                <p
+                  class="mt-4 text-gray-400 max-w-xl text-justify md:text-[14px]"
+                >
+                  This project is based on a to-do list that allows users to
+                  manage their daily tasks according to their preferences. I
+                  have added functionality using localStorage, which saves tasks
+                  directly in the user’s browser. This feature is helpful
+                  because it prevents users from losing their to-do list. If a
+                  user is unable to complete their tasks in a day, they can save
+                  the list without any hassle and continue later.
+                </p>
+                <div
+                  class="flex w-full gap-4 items-center text-white flex-wrap mt-5"
+                >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >HTML</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >CSS</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >JAVASCRIPT</span
+                  >
+                  <span
+                    class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                    >GITHUB</span
+                  >
                 </div>
-                <div class="exp section flex items-start gap-10 flex-col md:w-180 lg:w-160">
-                    <div class="exp cart flex md:justify-between w-full flex-col gap-10">
-                        <div class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3">
-                            <h3 class="text-white text-xl font-light">IT Executive <br> <span
-                                    class="text-sm text-[#D3E97A]">Moxsh Overseas Educon Pvt. Ltd</span></h3>
-                            <p class="text-sm text-[#C7C7C7]">August 2024 - Present</p>
-                        </div>
-                        <div class="job-decs">
-                            <p class="text-gray-400 text-justify">Conduct
-                                rigorous testing
-                                for internally developed applications, using programming knowledge to identify bugs and
-                                recommend performance optimizations.Partner with developers to refine, test, and
-                                deploy new
-                                features for internal systems, ensuring seamless user experiences Manage IT-related
-                                operations and webinar platform
-                                support,
-                                including technical troubleshooting and session organization
-                            </p>
-                        </div>
-                    </div>
-                    <div class="exp cart flex md:justify-between w-full flex-col gap-10">
-                        <div class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3">
-                            <h3 class="text-white text-xl font-light">Frontend Developer Intern <br> <span
-                                    class="text-sm text-[#D3E97A]">Capritech Global Services Pvt. Ltd.
-                                    (CTGS)</span></h3>
-                            <p class="text-sm text-[#C7C7C7]">March 2024 - June 2024</p>
-                        </div>
-                        <div class="job-decs">
-                            <p class="text-gray-400 text-justify">Worked on front end web development projects using
-                                HTML, CSS,
-                                JavaScript, and Bootstrap, contributing to the design and development of school
-                                websites
-                                with responsive and user friendly interfaces. Built a strong understanding of web
-                                structure, layout design, and clean coding practices while gaining hands on
-                                experience
-                                in UI design. Collaborated closely with team members to maintain project quality and
-                                consistency, and consistently delivered professional, high quality results within
-                                tight
-                                deadlines.</p>
-                        </div>
-                    </div>
+                <div class="project-info flex items-center mt-5 gap-6">
+                  <a
+                    href="https://daily-task-tracker-weld.vercel.app/"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/suthar-bhavesh/Daily-Task-Tracker.git"
+                    class="bg-[#D3E97A] p-2 w-25.5 cursor-pointer rounded-3xl uppercase text-black font-medium text-sm text-center"
+                    >Github
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20 w-full" />
+    <div class="container md:max-w-8xl md:mx-auto">
+      <section class="about-me" id="about">
+        <div
+          class="about-me-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000"
+        >
+          <div class="about-heading flex mb-5">
+            <h2
+              class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left"
+            >
+              About Me
+            </h2>
+          </div>
+          <div class="about-para flex items-start flex-col md:w-180 lg:w-160">
+            <h4 class="text-2xl mb-5 text-white">
+              I am a Frontend Developer based in india. Has Information
+              Technology Background
+            </h4>
+            <p class="text-gray-400 mb-5 text-justify md:text-[14px]">
+              I am a front-end developer based in india looking for exciting
+              opportunities. Has Information Technology background. Likes to
+              focus on accessibility when developing. Passionate and curious
+              about solving problems. Currently, I’m exploring Reactjs, Webflow
+              and a bit of Designing. While I am not programming, I enjoy
+              playing Singing, acting etc. Learning more to improve skill.
+            </p>
+
+            <div class="flex w-full gap-4 items-center mt-6">
+              <a
+                href="src/Document/Bhavesh resume.pdf"
+                download="resume-bhavesh.pdf"
+                class="text-black font-medium bg-[#D3E97A] w-50.5 p-2 h-12 rounded-3xl flex items-center gap-3 text-[13px] justify-around"
+                >Download Resume
+                <i
+                  class="fa-solid fa-download text-2xl text-black p-2 rounded-full flex justify-center items-center"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20" />
+    <div class="container md:max-w-8xl md:mx-auto">
+      <section class="skill-section mt-15">
+        <div
+          class="tech skill max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000"
+        >
+          <div class="tech skill heading flex mb-5">
+            <h2
+              class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left"
+            >
+              Technical skill
+            </h2>
+          </div>
+          <div
+            class="about-para md:flex md:flex-col gap-13 sm:mt-4 md:w-180 lg:w-160"
+          >
+            <p class="text-gray-400 mb-5">
+              I'm always learning and pushing myself toward new achievements.
+              Keeping up with the latest technology gives me the freedom to
+              adapt and keeps my skills sharp.
+            </p>
+
+            <div class="flex w-full gap-4 items-center text-white flex-wrap">
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >HTML</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-22 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >CSS</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-40 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >JAVASCRIPT</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >FIGMA</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >GITHUB</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-25 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >GIT</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-42 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >TAILWIND CSS</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-35 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >BOOTSTRAP</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >REST API</span
+              >
+              <span
+                class="border py-2 px-7 rounded-4xl flex justify-center items-center w-32 hover:text-black hover:bg-white hover:transition-all font-medium"
+                >REACT.JS</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr class="text-[#343a40] mt-20 mb-20" />
+    <div class="container md:max-w-8xl md:mx-auto">
+      <section class="myexp">
+        <div
+          class="my-exp max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40 reveal opacity-0 translate-y-50 transition-ease-in-out duration-1000"
+        >
+          <div
+            class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-70 text-white"
+          >
+            <h2
+              class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left"
+            >
+              my experience
+            </h2>
+          </div>
+          <div
+            class="exp section flex items-start gap-10 flex-col md:w-180 lg:w-160"
+          >
+            <div
+              class="exp cart flex md:justify-between w-full flex-col gap-10"
+            >
+              <div
+                class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3"
+              >
+                <h3 class="text-white text-xl font-light">
+                  IT Executive <br />
+                  <span class="text-sm text-[#D3E97A]"
+                    >Moxsh Overseas Educon Pvt. Ltd</span
+                  >
+                </h3>
+                <p class="text-sm text-[#C7C7C7]">August 2024 - Present</p>
+              </div>
+              <div class="job-decs">
+                <p class="text-gray-400 text-justify">
+                  Conduct rigorous testing for internally developed
+                  applications, using programming knowledge to identify bugs and
+                  recommend performance optimizations.Partner with developers to
+                  refine, test, and deploy new features for internal systems,
+                  ensuring seamless user experiences Manage IT-related
+                  operations and webinar platform support, including technical
+                  troubleshooting and session organization
+                </p>
+              </div>
+            </div>
+            <div
+              class="exp cart flex md:justify-between w-full flex-col gap-10"
+            >
+              <div
+                class="designation-year flex justify-between md:flex-col lg:flex-row flex-col gap-3"
+              >
+                <h3 class="text-white text-xl font-light">
+                  Frontend Developer Intern <br />
+                  <span class="text-sm text-[#D3E97A]"
+                    >Capritech Global Services Pvt. Ltd. (CTGS)</span
+                  >
+                </h3>
+                <p class="text-sm text-[#C7C7C7]">March 2024 - June 2024</p>
+              </div>
+              <div class="job-decs">
+                <p class="text-gray-400 text-justify">
+                  Worked on front end web development projects using HTML, CSS,
+                  JavaScript, and Bootstrap, contributing to the design and
+                  development of school websites with responsive and user
+                  friendly interfaces. Built a strong understanding of web
+                  structure, layout design, and clean coding practices while
+                  gaining hands on experience in UI design. Collaborated closely
+                  with team members to maintain project quality and consistency,
+                  and consistently delivered professional, high quality results
+                  within tight deadlines.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <hr class="text-[#343a40] mt-20 mb-20 w-full">
+    <hr class="text-[#343a40] mt-20 mb-20 w-full" />
 
     <div class="container md:max-w-8xl md:mx-auto" id="contactme">
-        <section class="contact-form">
-            <div
-                class="form-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40">
-                <div class="about-heading flex gap-5 flex-col">
-                    <h2
-                        class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left">
-                        Let's Connect
-                    </h2>
-                    <div class="social-link flex items-center gap-2">
-                        <a href="https://github.com/suthar-bhavesh" target="_blank"><i
-                                class="fa-brands fa-github text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/bhavesh-suthar-401925280/" target="_blank"><i
-                                class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://x.com/Bhavesh37820418" target="_blank"><i
-                                class="fa-brands fa-x-twitter text-[#D3E97A] text-2xl"></i></a>
-                        <a href="https://hosturl.info/31UQuC" target="_blank"><i
-                                class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i></a>
-                    </div>
-                    <div class="contact-detail flex flex-col gap-2">
-                        <a href="tel: +91 9352054449" class="text-[#6c757d] flex gap-2 items-center"><i
-                                class="fa-solid fa-phone"></i>+91
-                            9352054449</a>
-                        <a href="mailto: officialbhaveshsuthar@gmail.com"
-                            class="text-[#6c757d] flex gap-2 items-center"><i
-                                class="fa-regular fa-envelope"></i>officialbhaveshsuthar@gmail.com</a>
-                    </div>
-
-                </div>
-                <div class="main-form mt-14 w-full lg:mt-0 md:w-180 lg:w-160">
-                    <form action="#" method="post" class="w-full text-white myForm relative">
-                        <div class="contactFields flex flex-col mb-6 gap-2">
-                            <label for="fullname" class="text-gray-200 font-light">Full Name</label>
-                            <input type="text" placeholder="john Doe" name="fullname" id="fullname"
-                                class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField">
-                            <p class="error text-red-700 text-sm"></p>
-                        </div>
-
-                        <div class="contactFields flex flex-col mb-6 gap-2">
-                            <label for="email" class="text-gray-200 font-light">Email</label>
-                            <input type="email" placeholder="example@gmail.com" name="email" id="email"
-                                class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField">
-                            <p class="error text-red-700 text-sm"></p>
-                        </div>
-
-                        <div class="contactFields flex flex-col mb-6 gap-2">
-                            <label for="subject" class="text-gray-200 font-light">Subject</label>
-                            <input type="text" placeholder="Subject" name="subject" id="subject"
-                                class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField">
-                            <p class="error text-red-700 text-sm"></p>
-                        </div>
-
-                        <div class="contactFields flex flex-col mb-6 gap-2">
-                            <label for="message" class="text-gray-200 font-light">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10"
-                                class="bg-[#1A1A1A] p-3 outline-0 rounded-l-lg placeholder:text-gray-600 UserField"
-                                placeholder="Type here your Message..."></textarea>
-                            <p class="error text-red-700 text-sm"></p>
-                        </div>
-
-                        <button type="submit"
-                            class="mt-10 bg-[#D3E97A] text-black p-3 rounded-4xl w-30 font-medium cursor-pointer BtnSubmit">Submit</button>
-
-
-                    </form>
-                </div>
+      <section class="contact-form">
+        <div
+          class="form-content max-w-7xl mx-auto md:flex lg:flex-row flex-col md:mt-34 mt-7 flex gap-4 md:justify-between p-6 text-left md:items-start lg:items-center lg:gap-40 md:g-40"
+        >
+          <div class="about-heading flex gap-5 flex-col">
+            <h2
+              class="md:text-5xl text-5xl uppercase font-bebas tracking-wider font-light w-80 text-white sm:text-left"
+            >
+              Let's Connect
+            </h2>
+            <div class="social-link flex items-center gap-2">
+              <a href="https://github.com/suthar-bhavesh" target="_blank"
+                ><i class="fa-brands fa-github text-[#D3E97A] text-2xl"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bhavesh-suthar-401925280/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin text-[#D3E97A] text-2xl"></i
+              ></a>
+              <a href="https://x.com/Bhavesh37820418" target="_blank"
+                ><i class="fa-brands fa-x-twitter text-[#D3E97A] text-2xl"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-instagram text-[#D3E97A] text-2xl"></i
+              ></a>
             </div>
-        </section>
+            <div class="contact-detail flex flex-col gap-2">
+              <a
+                href="tel: +91 9352054449"
+                class="text-[#6c757d] flex gap-2 items-center"
+                ><i class="fa-solid fa-phone"></i>+91 9352054449</a
+              >
+              <a
+                href="mailto: officialbhaveshsuthar@gmail.com"
+                class="text-[#6c757d] flex gap-2 items-center"
+                ><i class="fa-regular fa-envelope"></i
+                >officialbhaveshsuthar@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="main-form mt-14 w-full lg:mt-0 md:w-180 lg:w-160">
+            <form
+              action="#"
+              method="post"
+              class="w-full text-white myForm relative"
+            >
+              <div class="contactFields flex flex-col mb-6 gap-2">
+                <label for="fullname" class="text-gray-200 font-light"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="john Doe"
+                  name="fullname"
+                  id="fullname"
+                  class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField"
+                />
+                <p class="error text-red-700 text-sm"></p>
+              </div>
+
+              <div class="contactFields flex flex-col mb-6 gap-2">
+                <label for="email" class="text-gray-200 font-light"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  name="email"
+                  id="email"
+                  class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField"
+                />
+                <p class="error text-red-700 text-sm"></p>
+              </div>
+
+              <div class="contactFields flex flex-col mb-6 gap-2">
+                <label for="subject" class="text-gray-200 font-light"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject"
+                  class="bg-[#1A1A1A] p-3 outline-0 rounded-lg placeholder:text-gray-600 UserField"
+                />
+                <p class="error text-red-700 text-sm"></p>
+              </div>
+
+              <div class="contactFields flex flex-col mb-6 gap-2">
+                <label for="message" class="text-gray-200 font-light"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="bg-[#1A1A1A] p-3 outline-0 rounded-l-lg placeholder:text-gray-600 UserField"
+                  placeholder="Type here your Message..."
+                ></textarea>
+                <p class="error text-red-700 text-sm"></p>
+              </div>
+
+              <button
+                type="submit"
+                class="mt-10 bg-[#D3E97A] text-black p-3 rounded-4xl w-30 font-medium cursor-pointer BtnSubmit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="footer-developer-sign flex justify-center items-center md:mt-1 mt-10 w-full">
-        <p class="text-gray-800 text-sm">@ 2026 Bhavesh Suthar</p>
+    <div
+      class="footer-developer-sign flex justify-center items-center md:mt-1 mt-10 w-full"
+    >
+      <p class="text-gray-800 text-sm">@ 2026 Bhavesh Suthar</p>
     </div>
     <script src="/src/script.js"></script>
-</body>
-
+  </body>
 </html>
