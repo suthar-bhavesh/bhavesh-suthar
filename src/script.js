@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (Value === "") {
         FormValid = false;
-        Inputs.style.border = "2px solid red";
+        Inputs.style.border = "1px solid red";
       } else {
-        Inputs.style.border = "2px solid green";
+        Inputs.style.border = "1px solid green";
         FormData[FieldName] = Value;
       }
     });
